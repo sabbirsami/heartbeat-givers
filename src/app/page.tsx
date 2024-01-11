@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Banner from "@/components/home/Banner";
+import "../styles/globals.css";
 
 export default function Home() {
-    return <h2 className="">Blood</h2>;
+    return (
+        <>
+            <Banner />
+        </>
+    );
 }

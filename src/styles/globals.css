@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-bg {
+    background-image: url("../assets/heroBg.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+}

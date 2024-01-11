@@ -13,11 +13,11 @@ const Navbar = () => {
             path: "/donate",
         },
         {
-            route: "About",
+            route: "About Us",
             path: "/about",
         },
         {
-            route: "Contact",
+            route: "Contact Us",
             path: "/contact",
         },
         {
@@ -26,12 +26,12 @@ const Navbar = () => {
         },
     ];
     return (
-        <header className="container mx-auto px-6 my-4 text-secondary">
-            <div className="bg-dark rounded-full pt-4 pb-4 px-12">
-                <div className="flex items-center justify-between">
+        <header className="container mx-auto px-6 my-4 text-dark">
+            <div className=" rounded-full pt-4 pb-4 px-12">
+                <div className="flex items-end justify-between">
                     <div className="">
                         <Image
-                            className="h-8 w-auto mb-2"
+                            className="h-8 w-auto mb-0.5"
                             src={logo}
                             alt="heartbeat givers' logo"
                         ></Image>
@@ -41,7 +41,7 @@ const Navbar = () => {
                             {navLinks.map((link, idx) => (
                                 <Link
                                     href={link?.path}
-                                    className="px-3 text-sm"
+                                    className="px-3 text-sm font-medium"
                                     key={idx}
                                 >
                                     {link?.route}
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <div className="">
                         <Link
                             href={"/register"}
-                            className="py-3 px-6 text-primary rounded-full"
+                            className="py-3 font-medium px-6 text-primary rounded-full"
                         >
                             Register
                         </Link>
